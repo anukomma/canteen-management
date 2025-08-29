@@ -101,9 +101,3 @@ Login with:
 - No real payment gateway; recharge button simulates success.
 - Timezone not managed per user (demo purpose).
 
-## Extending (Bonus)
-
-- **QR flow:** generate `qrToken` on MealCard, display as QR in student UI; cashier scans and resolves card.
-- **Weekly reports:** MongoDB `$match`, `$group` by week, top meals/spenders.
-- **Tests:** Supertest + Jest for endpoints.
-- **Docker:** add Dockerfile + docker-compose for Mongo + services.
