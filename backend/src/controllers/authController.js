@@ -20,9 +20,6 @@ export const login = async (req, res) => {
     return res.status(401).json({ error: 'Invalid password' });
   }
 
-  if (user.pending) {
-    return res.status(403).json({ error: 'Account pending approval' });
-  }
 
   const token = sign(user);
 
